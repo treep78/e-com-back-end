@@ -8,13 +8,30 @@ const authenticate = require('./concerns/authenticate');
 
 const index = (req, res, next) => {
   Item.find()
-    .then(items => res.json({ items }))
+    .then((items) => {
+      let serialized = [];
+      for(let item in items){
+        let tmp = {
+          product_id: items[item].product_id,
+          count: items[item].count
+        }
+        serialized.push(tmp);
+      }
+      res.json({ serialized });
+    })
     .catch(err => next(err));
 };
 
 const show = (req, res, next) => {
   Item.findById(req.params.id)
-    .then(item => item ? res.json({ item }) : next())
+    .then((item) =>{
+      if(item){
+        console.log(item);
+        res.json({ item });
+      }else{
+        next();
+      }
+    })
     .catch(err => next(err));
 };
 

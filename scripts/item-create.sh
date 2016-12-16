@@ -2,7 +2,7 @@
 
 API="http://localhost:4741"
 URL_PATH="/items"
-PRODUCT_ID="some product ID"
+PRODUCT_ID="a new one"
 COUNT=6
 TOKEN=RBBHIFi5PAD/Ihz6hKOPLmQUgPgfJD9QZf6M/+LgeyU=--WVV0LktNEnt8vwOyRNdEw4Yd2fT/w9cp2NIfiPX/lWU=
 
