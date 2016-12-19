@@ -13,8 +13,9 @@ const index = (req, res, next) => {
       for(let item in items){
         let tmp = {
           product_id: items[item].product_id,
-          count: items[item].count
-        }
+          count: items[item].count,
+          id: items[item]._id
+        };
         serialized.push(tmp);
       }
       res.json({ serialized });
@@ -36,7 +37,6 @@ const show = (req, res, next) => {
 };
 
 const create = (req, res, next) => {
-  console.log("create this!");
   let item = Object.assign(req.body.item, {
     _owner: req.currentUser._id,
   });

@@ -2,9 +2,9 @@
 
 API="http://localhost:4741"
 URL_PATH="/items"
-PRODUCT_ID="a new one"
+PRODUCT_ID="Here'sAnId"
 COUNT=6
-TOKEN=RBBHIFi5PAD/Ihz6hKOPLmQUgPgfJD9QZf6M/+LgeyU=--WVV0LktNEnt8vwOyRNdEw4Yd2fT/w9cp2NIfiPX/lWU=
+TOKEN=hsYw39jWS4g5AaL0RJkpLTzb7k0tMT5eFvS9TPDEsb4=--T6Ld01AHmcz3voChaH3aMOhRVaYu+80xmCL3qOcGans=
 
 curl "${API}${URL_PATH}" \
   --include \
