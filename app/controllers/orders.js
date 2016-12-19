@@ -7,7 +7,8 @@ const Order = models.order;
 const authenticate = require('./concerns/authenticate');
 
 const index = (req, res, next) => {
-  Order.find()
+  let search = {_owner: req.currentUser._id };
+  Order.find(search)
     .then((orders) => {
       let serialized = [];
       for(let order in orders){
@@ -24,7 +25,8 @@ const index = (req, res, next) => {
 };
 
 const show = (req, res, next) => {
-  Order.findById(req.params.id)
+  let search = { _id: req.params.id, _owner: req.currentUser._id };
+  Order.findById(search)
     .then((order) =>{
       if(order){
         let serialized ={

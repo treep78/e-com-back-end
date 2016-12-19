@@ -7,7 +7,8 @@ const Item = models.item;
 const authenticate = require('./concerns/authenticate');
 
 const index = (req, res, next) => {
-  Item.find()
+  let search = {_owner: req.currentUser._id };
+  Item.find(search)
     .then((items) => {
       let serialized = [];
       for(let item in items){
@@ -24,7 +25,8 @@ const index = (req, res, next) => {
 };
 
 const show = (req, res, next) => {
-  Item.findById(req.params.id)
+  let search = { _id: req.params.id, _owner: req.currentUser._id };
+  Item.findById(search)
     .then((item) =>{
       if(item){
         console.log(item);

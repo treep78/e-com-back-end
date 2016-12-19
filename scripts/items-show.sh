@@ -1,5 +1,5 @@
 #!/bin/bash
-TOKEN=UmoNMDOmJ0VuJg7SSS5OWOuRj2agkWKzylRRWXmoxmQ=--q07k3oIscAV+kPH/JmCGk1+eOUrODMisaLc2esIrLHs=
+TOKEN=3NyXAP9VE5ThsOCkhDzTqconXdkKDlv0q6XvsjRttxk=--X9emPMUC0hbgCkuB/3LyWXaNif9icgmhBATt7cyDxB4=
 
 curl --include --request GET http://localhost:4741/items \
   --header "Authorization: Token token=$TOKEN"
