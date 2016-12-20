@@ -2,7 +2,7 @@
 
 API="https://gentle-hamlet-35507.herokuapp.com"
 URL_PATH="/sign-up"
-EMAIL="jain@said.com"
+EMAIL="jane@said.com"
 PASSWORD="jane"
 
 curl "${API}${URL_PATH}" \
