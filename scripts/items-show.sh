@@ -1,5 +1,5 @@
 #!/bin/bash
-TOKEN=3NyXAP9VE5ThsOCkhDzTqconXdkKDlv0q6XvsjRttxk=--X9emPMUC0hbgCkuB/3LyWXaNif9icgmhBATt7cyDxB4=
+TOKEN=p3Va+8nzjhaKGPlLv52SlhJGyrP7Q4e8oWjk8MZLpK4=--CArvl4HMOjESvmhVifwf/OjFWZNWZkLsKyl8a00ssgI=
 
-curl --include --request GET http://localhost:4741/items \
+curl --include --request GET https://gentle-hamlet-35507.herokuapp.com/items \
   --header "Authorization: Token token=$TOKEN"

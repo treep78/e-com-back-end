@@ -1,6 +1,6 @@
 #!/bin/bash
 
-API="http://localhost:4741"
+API="https://gentle-hamlet-35507.herokuapp.com"
 URL_PATH="/items"
 PRODUCT_ID="Here'sAnId"
 COUNT=6
@@ -8,7 +8,7 @@ PRICE=1000
 NAME="TEST ITEM"
 DESCRIPTION="Product description test"
 IMAGE="google.com"
-TOKEN=hsYw39jWS4g5AaL0RJkpLTzb7k0tMT5eFvS9TPDEsb4=--T6Ld01AHmcz3voChaH3aMOhRVaYu+80xmCL3qOcGans=
+TOKEN=p3Va+8nzjhaKGPlLv52SlhJGyrP7Q4e8oWjk8MZLpK4=--CArvl4HMOjESvmhVifwf/OjFWZNWZkLsKyl8a00ssgI=
 
 curl "${API}${URL_PATH}" \
   --include \
