@@ -42,4 +42,4 @@ This back end, consisting of a Node.js app and a mongo database, receives calls 
 - A user can remove items from cart
 - A user can submit an order
 - A user can pay for an order
-- A A user can view past orders
+- A user can view past orders
