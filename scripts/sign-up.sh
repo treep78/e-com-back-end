@@ -1,6 +1,6 @@
 #!/bin/bash
 
-API="http://localhost:4741"
+API="https://gentle-hamlet-35507.herokuapp.com/"
 URL_PATH="/sign-up"
 EMAIL="jane@said.com"
 PASSWORD="jane"
