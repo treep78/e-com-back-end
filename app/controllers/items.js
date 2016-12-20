@@ -13,8 +13,12 @@ const index = (req, res, next) => {
       let serialized = [];
       for(let item in items){
         let tmp = {
-          product_id: items[item].product_id,
+          name: items[item].name,
+          price: items[item].price,
+          description: items[item].description,
+          image: items[item].image,
           count: items[item].count,
+          product_id: items[item].product_id,
           id: items[item]._id
         };
         serialized.push(tmp);
@@ -29,8 +33,17 @@ const show = (req, res, next) => {
   Item.findById(search)
     .then((item) =>{
       if(item){
-        console.log(item);
-        res.json({ item });
+        let serialized = {
+            name: item.name,
+            price: item.price,
+            description: item.description,
+            image: item.image,
+            count: item.count,
+            product_id: item.product_id,
+            id: item._id
+        };
+        console.log(serialized);
+        res.json({ serialized });
       }else{
         next();
       }
