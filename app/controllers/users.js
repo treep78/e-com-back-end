@@ -46,22 +46,6 @@ const makeErrorHandler = (res, next) =>
       res.status(400).json({ error }) :
     next(error);
 
-// const signup = (req, res, next) => {
-//   let credentials = req.body.credentials;
-//   let user = { email: credentials.email, password: credentials.password };
-//   getToken().then(token =>
-//     user.token = token
-//   ).then(() =>
-//     new User(user).save()
-//   ).then(newUser => {
-//     let user = newUser.toObject();
-//     delete user.token;
-//     delete user.passwordDigest;
-//     res.json({ user });
-//   }).catch(makeErrorHandler(res, next));
-//
-// };
-
 const signup = (req, res, next) => {
   let credentials = req.body.credentials;
   let user = { email: credentials.email, password: credentials.password };
