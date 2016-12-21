@@ -35,7 +35,7 @@ const show = (req, res, next) => {
           currency: charge.currency,
           source: charge.source,
         };
-        res.json({ serialized });
+        res.json({ tmp });
       }else{
         next();
       }
@@ -44,9 +44,13 @@ const show = (req, res, next) => {
 };
 
 const create = (req, res, next) => {
+  console.log('Request: ',req.body);
+  console.log('Request Body:', req.body);
+  console.log('Request Body charge: ', req.body.charge);
   let charge = Object.assign(req.body.charge, {
     _owner: req.currentUser._id,
   });
+  console.log('Charge: T',charge);
   Charge.create(charge)
     .then(charge => res.json({ charge }))
     .catch(err => next(err));
