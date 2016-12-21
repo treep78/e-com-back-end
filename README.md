@@ -35,7 +35,7 @@ This back end, consisting of a Node.js app and a mongo database, receives calls 
 - A user can sign-in
 - A user can change-password
 - A user can sign-out
-- A user can view products
+- Anyone can view products
 - A user can add items to cart
 - A user can view items in cart
 - A user can change item quantity in cart
@@ -43,3 +43,7 @@ This back end, consisting of a Node.js app and a mongo database, receives calls 
 - A user can submit an order
 - A user can pay for an order
 - A user can view past orders
+
+# Future Improvements
+
+Given more time it might be good to see if any unnecessary or unsecure data is being sent to the front end. If so, it would be good to add additional serialization to prevent that type of data from being sent.
