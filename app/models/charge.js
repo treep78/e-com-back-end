@@ -5,15 +5,15 @@ const mongoose = require('mongoose');
 const chargeSchema = new mongoose.Schema({
   amount: {
     type: Number,
-    required: true,
+    required: false,
   },
   currency: {
     type: String,
-    required: true,
+    required: false,
   },
   source: {
     type: String,
-    required: true,
+    required: false,
   },
   description: {
     type: String,
@@ -23,11 +23,11 @@ const chargeSchema = new mongoose.Schema({
     type: Object,
     required: false,
   },
-  _owner: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
-    required: true,
-  },
+  // _owner: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   ref: 'User',
+  //   required: true,
+  // },
 }, {
   timestamps: true,
 });
