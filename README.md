@@ -1,8 +1,8 @@
 # Mod Squad Back End for E-Commerce
 
-Deployed Back-end: https://gentle-hamlet-35507.herokuapp.com
-Back-end Repo: https://github.com/Mod-Squad/e-com-back-end
-Front-end Repo: https://github.com/Mod-Squad/front-end-e-com
+- Deployed Back-end: https://gentle-hamlet-35507.herokuapp.com
+- Back-end Repo: https://github.com/Mod-Squad/e-com-back-end
+- Front-end Repo: https://github.com/Mod-Squad/front-end-e-com
 
 # Back-end Summary
 
