@@ -2,9 +2,9 @@
 
 API="http://localhost:4741"
 URL_PATH="/items"
-COUNT=2
-ID=58544387b817e972468c5bc3
-TOKEN=UmoNMDOmJ0VuJg7SSS5OWOuRj2agkWKzylRRWXmoxmQ=--q07k3oIscAV+kPH/JmCGk1+eOUrODMisaLc2esIrLHs=
+COUNT=7
+ID=58594c0755bbe8346f3d3101
+TOKEN=0VjM2cpO+g4CO0olthuUP9YxCugulGx+L/06W/Lmnkc=--vGEpN3NKGNgazblqDA0V/niP9doqzmxxSZQTSFvMCfk=
 
 curl "${API}${URL_PATH}/${ID}" \
   --include \
