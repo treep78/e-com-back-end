@@ -1,9 +1,9 @@
 #!/bin/bash
 
-API="https://gentle-hamlet-35507.herokuapp.com"
+API="http://localhost:4741"
 URL_PATH="/sign-in"
-EMAIL="jain@said.com"
-PASSWORD="jane"
+EMAIL="a1@a1.com"
+PASSWORD="123"
 
 curl "${API}${URL_PATH}" \
   --include \
