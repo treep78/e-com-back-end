@@ -23,12 +23,27 @@ This back end, consisting of a Node.js app and a mongo database, receives calls 
 - mLab
 - Stripe
 
-# Databases:
+# Database Collections:
 
 - /products (catalogue)
 - /items (card)
 - /orders (order history)
 - /users
+
+# Routes
+
+// standards RESTful routes
+.resources('items')
+.resources('products', {only: ['index', 'show']})
+.resources('orders', {only: ['index','show','create']})
+.resources('charges', {only: ['index', 'show', 'create']})
+
+// users of the app have special requirements
+.post('/sign-up', 'users#signup')
+.post('/sign-in', 'users#signin')
+.delete('/sign-out/:id', 'users#signout')
+.patch('/change-password/:id', 'users#changepw')
+.resources('users', { only: ['index', 'show'] })
 
 # User Stories
 
